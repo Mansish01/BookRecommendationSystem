@@ -1,0 +1,29 @@
+Dataset Description
+
+Source Files:
+
+Books.csv: Contains book descriptions and metadata.
+Ratings.csv: Contains the ratings provided for the books.
+Users.csv: Contains user information and demographics.
+
+Project Approach
+
+1. Data Preparation
+Objective: Establish relationships between users and books based on ratings.
+Merged datasets to create a cohesive view of user-book interactions.
+Created a pivot table with users and books to structure the data for modeling.
+
+2. Sparse Matrix Conversion
+Converted the pivot table into a Compressed Sparse Row (CSR) Matrix.
+This format was used as input to the collaborative filtering model to optimize memory usage and computation.
+
+3. Collaborative Filtering
+Technique: Collaborative filtering was applied to recommend books to users based on ratings.
+
+4. Clustering
+Implemented clustering on the CSR matrix to group users or books with similar characteristics.
+Leveraged these clusters for enhanced recommendation accuracy and analysis.
+
+Output Visualization
+Framework Used: Streamlit
+A user-friendly interface was developed for easy visualization and interaction.
